@@ -1,0 +1,705 @@
+/* index.html */
+body{
+    margin: 0;
+    padding: 0;
+}
+/* ヘッダー */
+header{
+    background-color: black;
+}
+
+/* ナビ */
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav>a{
+    margin: 10px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav>a:link{
+    color: white;
+    text-decoration: none;
+}
+
+nav>a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+nav>a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+nav>a:active{
+    color: red;
+    text-decoration: none;
+}
+
+/* 見出し */
+.index{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin:80px 20px 0 20px;
+}
+
+.index::after{
+    content: '';
+    width: 200px;
+    height: 3px;
+    background: blue;
+    margin-left: 20px;
+}
+
+/* more */
+.more{
+    text-align: right;
+    margin: 40px;
+    font-size: 18px;
+}
+
+.more>a:link{
+    color:  black;;
+    text-decoration: none;
+}
+
+.more>a:visited{
+    color:  black;;
+    text-decoration: none;
+}
+
+.more>a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.more>a:active{
+    color: red;
+    text-decoration: none;
+}
+
+.more::before{
+    content: '→';
+}
+
+/* PROFILE */
+#profile-content{
+    display: flex;
+    margin: 20px;
+}
+
+#meimg{
+    width: 30%;
+}
+
+#me{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left 100% bottom 100%;
+    border-radius: 50%;
+    rotate: 30deg;
+}
+
+#metxt{
+    width: 70%;
+    font-size: 25px;
+}
+
+/* EXPERIENCE */
+#experience-content{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+#experience-content>div{
+    justify-content: space-between;
+    margin-right: 20px;
+    background-color: whitesmoke;
+}
+
+.experience-img{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+#experience-img1{
+    width: 350px;
+    object-fit: contain;
+    margin-right: 0;
+}
+
+#experience-img2{
+    width: 350px;
+    object-fit: contain;
+    margin-right: 0;
+}
+
+#experience-img3{
+    width: 350px;
+    object-fit: cover;
+    margin-right: 0;
+}
+
+.experience-txt{
+    width: 350px;
+    font-size: 20px;
+}
+
+#experience>a{
+    font-size: 25px;
+}
+
+/* SKILL */
+
+table{
+    font-size: 25px;
+    margin: 20px;
+}
+
+td{
+    text-decoration: underline;
+}
+
+.licence{
+    font-weight: bold;
+}
+
+.licence-date{
+    text-decoration: none;
+}
+
+/* フッター */
+footer{
+    background-color: black;
+    margin-top: 80px;
+}
+
+#copyright{
+    color: white;
+    text-align: center;
+}
+
+/* profile.html */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 歴 */
+#history{
+    width:100%;
+    margin:0;
+}
+
+#history>h1{
+    font-size:36px;
+    margin: 20px;
+}
+
+
+#history table,#history tr,#history td{
+    border:1px solid black;
+    text-decoration:none;
+    background-color:whitesmoke;
+}
+
+#history .td-blank{
+    border:none;
+}
+
+/* CHARACTER */
+#character{
+    width:100%;
+}
+
+#character-content{
+    display:flex;
+    margin:20px;
+}
+
+#character-left{
+    width:50%;
+}
+
+#character-right{
+    width:50%;
+}
+
+#character-content>div{
+    position:relative;
+    background-color:whitesmoke;
+    margin-right:20px;
+    height:600px;
+    box-shadow: 3px 3px 3px;
+}
+
+#strength-title{
+    position:absolute;
+    width:400px;
+    height:300px;
+    font-size:36px;
+    color:white;
+    background-color:#b0c4de;
+    left:0;
+    top:0;
+    border-radius:0 0 100% 0;
+    z-index:1;
+}
+
+#weakness-title{
+    position:absolute;
+    width:400px;
+    height:300px;
+    font-size:36px;
+    color:white;
+    background-color:#b0c4de;
+    left:0;
+    top:0;
+    border-radius:0 0 100% 0;
+    z-index:1;
+}
+
+#strength-txt{
+    position:absolute;
+    top:200px;
+    z-index:2;
+    font-size:32px;
+}
+
+#strength-txt>ul>li{
+    margin:20px 0;
+}
+
+#weakness-txt{
+    position:absolute;
+    top:200px;
+    z-index:2;
+    font-size:32px;
+}
+
+#weakness-txt>ul>li{
+    margin:20px 0;
+}
+
+/* REASON */
+
+#reason{
+    width:100%;
+}
+
+#reason-content>ul>li{
+    font-size:36px;
+    margin:20px 0;
+    text-decoration:underline;
+}
+
+/* experience.html */
+
+/* 留学 */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#study-abroad{
+    width:100%;
+}
+
+#australia-content{
+    height:1240px;
+    background-color:whitesmoke;
+    position:relative;
+}
+
+#australia-img1{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left:20px;
+    position:absolute;
+    top:20px;
+    object-position: 100% 100%;
+}
+
+#australia-img2{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    object-position:100% 100%;
+    border-radius:50%;
+    margin-left:20px;
+    position:absolute;
+    top:320px;
+    right:20px;
+    object-position: 50% 100%;
+}
+
+#australia-img3{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left:20px;
+    position:absolute;
+    top:620px;
+    object-position: 0% 10%;
+}
+
+#australia-img4{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left:20px;
+    position:absolute;
+    top:920px;
+    right:20px;
+}
+
+.australia-txt{
+    font-size:20px;
+}
+
+#australia-txt1{
+    position:absolute;
+    top: 130px;
+    left:340px;
+    width:50%;
+}
+
+#australia-txt2{
+    position:absolute;
+    top:430px;
+    right:340px;
+    width:50%;
+}
+
+#australia-txt3{
+    position:absolute;
+    top:730px;
+    left:340px;
+    width:50%;
+}
+
+#australia-txt4{
+    position:absolute;
+    top:1030px;
+    right:340px;
+    width:50%;
+}
+
+/* アルバイト */
+
+#part-time{
+    width: 100%;
+}
+
+#part-time li{
+    text-decoration: underline;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#part-time p{
+    font-size: 20px;
+    font-weight: no;
+    margin: 20px;
+}
+
+#pcsp{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+/* オペレータ */
+#datacenter{
+    width: 100%;
+}
+
+#operator-content{
+    position: relative;
+}
+
+#operator-content li{
+    font-size: 24px;
+    margin: 24px 0;
+}
+
+#operator-content1>div{
+    display: flex;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: 200px;
+    justify-content: flex-start;
+    z-index: 2;
+}
+
+#operator-content1>div>h2{
+    color: white;
+    align-content: center;
+    font-size: 40px;
+    margin-left: -20px;
+}
+
+#operator-content2>div{
+    display: flex;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 90px;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+#operator-content2>div>h2{
+    color: white;
+    align-content: center;
+    font-size: 40px;
+    margin-right: -20px;
+}
+
+#operator-content3>div{
+    display: flex;
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+    justify-content: flex-start;
+    z-index: 2;
+}
+
+#operator-content3>div>h2{
+    color: white;
+    align-content: center;
+    font-size: 40px;
+    margin-left: -20px;
+}
+
+#operator-content h2{
+    text-shadow: 2px 2px 1px black;
+}
+
+/* スマホ用 */
+@media screen and (max-width:767px) {
+
+/* 見出し */
+.index::after{
+    content: '';
+    width: 150px;
+}
+
+/* ナビ */
+nav>a{
+    margin: 10px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+/* index.html */
+/* PROFILE */
+#profile-content{
+    display: block;
+}
+    
+#meimg{
+    width: 100%;
+    text-align: center;
+}
+
+#metxt{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* EXPERIENCE */
+#experience-content{
+    display: block;
+}
+
+#experience-content>div{
+    margin-right: 0;
+    height: 400px;
+}
+
+#experience-img1{
+    width: 100%;
+}
+
+#experience-img2{
+    width: 100%;
+}
+
+#experience-img3{
+    width: 100%;
+}
+
+/* profile.html */
+
+/* HISTORY */
+
+/* CHARACTER */
+#character-content{
+    display:block;
+}
+
+#character-left{
+    width:100%;
+}
+
+#character-right{
+    width:100%;
+}
+
+#character-content>div{
+    height: 600px;
+    margin-bottom: 20px;
+}
+#strength-title{
+    width: 100%;
+}
+
+#weakness-title{
+    width: 100%;
+}
+
+#strength-txt{
+top: 100px;
+}
+
+#reason-content>ul>li{
+    font-size:24px;
+    margin:20px 0;
+    text-decoration:underline;
+}
+
+/* experience.html */
+
+/* 留学 */
+
+#australia-content{
+    display: block;
+    position: static;
+    height: 2600px;
+    text-align: center;
+}
+#australia-img1{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left:20px;
+    position:static;
+    top:20px;
+    object-position: 100% 100%;
+}
+
+#australia-img2{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    object-position:100% 100%;
+    border-radius:50%;
+    margin-left:20px;
+    position:static;
+    top:320px;
+    right:20px;
+    object-position: 50% 100%;
+}
+
+#australia-img3{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left:20px;
+    position:static;
+    top:620px;
+    object-position: 0% 10%;
+}
+
+#australia-img4{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-left:20px;
+    position:static;
+    top:920px;
+    right:20px;
+}
+
+#australia-txt1{
+    position:static;
+    top: 130px;
+    left:340px;
+    width:50%;
+}
+
+#australia-txt2{
+    position:static;
+    top:430px;
+    right:340px;
+    width:50%;
+}
+
+#australia-txt3{
+    position:static;
+    top:730px;
+    left:340px;
+    width:50%;
+}
+
+#australia-txt4{
+    position:static;
+    top:1030px;
+    right:340px;
+    width:50%;
+}
+
+.australia-txt{
+    margin: 10px auto;
+}
+#pcsp{
+    height: 150px;
+}
+
+/* オペレータ */
+
+#operator-content1>div{
+    display:none;
+}
+
+#operator-content2>div{
+    display:none;
+}
+
+#operator-content3>div{
+    display:none;
+}
+
+}
